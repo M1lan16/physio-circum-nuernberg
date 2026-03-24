@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Circum – Privatpraxis für Physiotherapie in Nürnberg. Befundorientierte Behandlung, Manuelle Therapie &amp; aktive Prävention für Privatpatienten und Selbstzahler.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/">
+<meta property="og:title" content="Circum – Privatpraxis für Physiotherapie Nürnberg">
+<meta property="og:description" content="Befundorientierte Behandlung, Manuelle Therapie &amp; aktive Prävention in Nürnberg. Privatpraxis &amp; Selbstzahler.">
+<meta property="og:image" content="/og-image.jpg">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Circum Physiotherapie">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Circum – Privatpraxis für Physiotherapie Nürnberg">
+<meta name="twitter:description" content="Befundorientierte Behandlung, Manuelle Therapie &amp; aktive Prävention in Nürnberg. Privatpraxis &amp; Selbstzahler.">
+<title>Circum – Privatpraxis für Physiotherapie Nürnberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1C3557;
+    --navy-light: #2A4A72;
+    --mint: #4A9B8E;
+    --mint-light: #5BB3A5;
+    --cream: #F7F5F1;
+    --warm-white: #FDFCFA;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-soft: #7A7A7A;
+    --border: rgba(28,53,87,0.12);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--warm-white);
+    color: var(--text-dark);
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(253,252,250,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--mint); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-mid);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta {
+    background: var(--navy);
+    color: white !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--navy-light) !important; color: white !important; }
+
+  /* HERO */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 68px 5% 0;
+    gap: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(135deg, #EBF4F2 0%, #D4ECE8 100%);
+    z-index: 0;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .hero-content { position: relative; z-index: 1; }
+  .hero-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mint);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--mint);
+    border-radius: 2px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    line-height: 1.1;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--mint);
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 440px;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .btn-primary {
+    background: var(--navy);
+    color: white;
+    padding: 0.85rem 1.75rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { background: var(--navy-light); transform: translateY(-1px); }
+  .btn-phone {
+    color: #1C3557;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.25rem;
+    background: #EBF4F2;
+    border: 1.5px solid #4A9B8E;
+    border-radius: 100px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .btn-phone:hover { background: #D4ECE8; border-color: #3A8A7D; }
+  .phone-icon {
+    width: 32px; height: 32px;
+    background: rgba(74,155,142,0.15);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--mint);
+  }
+  .hero-image {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-img-frame {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 4/5;
+    background: var(--navy);
+    border-radius: 24px 24px 80px 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 32px 80px rgba(28,53,87,0.2);
+  }
+  .hero-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #2A4A72 0%, #1C3557 60%, #152840 100%);
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    gap: 1rem;
+  }
+  .hero-img-icon {
+    width: 64px; height: 64px;
+    background: rgba(74,155,142,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem;
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: 24px; left: auto; right: 16px;
+    background: white;
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px;
+  }
+  .badge-stars { color: #F59E0B; font-size: 0.9rem; letter-spacing: -1px; }
+  .badge-text { font-size: 0.8rem; }
+  .badge-text strong { display: block; color: var(--navy); font-weight: 500; }
+  .badge-text span { color: var(--text-soft); font-size: 0.75rem; }
+
+  /* TRUST BAR */
+  #trust {
+    background: var(--navy);
+    padding: 1.5rem 5%;
+  }
+  .trust-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .trust-item strong { color: white; font-weight: 500; }
+  .trust-divider {
+    width: 1px; height: 24px;
+    background: rgba(255,255,255,0.2);
+  }
+  .trust-icon {
+    width: 32px; height: 32px;
+    background: rgba(74,155,142,0.25);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: white;
+  }
+
+  /* SECTIONS */
+  section { padding: 6rem 5%; }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mint);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .section-label::before {
+    content: '';
+    width: 20px; height: 2px;
+    background: var(--mint);
+    border-radius: 2px;
+    display: inline-block;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .section-intro {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    font-weight: 400;
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  /* SCHMERZEN */
+  #schmerzen { background: var(--cream); }
+  .schmerz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  .schmerz-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .schmerz-card:hover {
+    border-color: var(--mint);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(74,155,142,0.12);
+  }
+  .schmerz-icon { margin-bottom: 0.75rem; display: block; color: var(--mint); }
+  .schmerz-card h3 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+  }
+  .schmerz-card p { font-size: 0.9rem; color: #3A3A3A; }
+
+  /* LEISTUNGEN */
+  .leistungen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .leistung-card {
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.72);
+    box-shadow: 0 8px 32px rgba(28,53,87,0.08);
+    transition: all 0.25s;
+  }
+  .leistung-card:hover {
+    background: rgba(255,255,255,0.82);
+    border-color: rgba(74,155,142,0.3);
+    box-shadow: 0 12px 40px rgba(28,53,87,0.13);
+    transform: translateY(-2px);
+  }
+  .leistung-num {
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--mint);
+    opacity: 0.4;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .leistung-card h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .leistung-card p { font-size: 0.9rem; color: #3A3A3A; line-height: 1.6; }
+  .leistung-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(74,155,142,0.1);
+    color: var(--mint);
+    border-radius: 100px;
+    font-weight: 500;
+  }
+
+  /* WARUM WIR */
+  #warum { background: var(--navy); color: white; }
+  #warum h2 { color: white; }
+  #warum .section-label { color: rgba(74,155,142,0.9); }
+  #warum .section-label::before { background: rgba(74,155,142,0.9); }
+  #warum .section-intro { color: rgba(255,255,255,0.6); }
+  .warum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .warum-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(28,53,87,0.12);
+    transition: all 0.25s;
+  }
+  .warum-card:hover {
+    background: rgba(255,255,255,0.11);
+    border-color: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+  }
+  .warum-icon {
+    width: 48px; height: 48px;
+    background: rgba(74,155,142,0.2);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.25rem;
+    color: var(--mint);
+  }
+  .warum-card h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .warum-card p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+  /* TEAM */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .team-card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: white;
+    transition: box-shadow 0.2s;
+  }
+  .team-card:hover { box-shadow: 0 12px 36px rgba(28,53,87,0.1); }
+  .team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 4px 16px rgba(28,53,87,0.15);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    font-size: 3rem;
+    color: var(--mint);
+  }
+  .team-info { padding: 1.5rem; }
+  .team-info h3 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+  }
+  .team-role { font-size: 0.8rem; color: var(--mint); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+  .team-bio { font-size: 0.875rem; color: var(--text-mid); line-height: 1.6; }
+  .team-spec {
+    margin-top: 1rem;
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+  }
+  .spec-pill {
+    font-size: 0.73rem;
+    padding: 0.2rem 0.6rem;
+    background: var(--cream);
+    border-radius: 100px;
+    color: var(--text-mid);
+    border: 1px solid var(--border);
+  }
+
+  /* BEWERTUNGEN */
+  #bewertungen { background: var(--cream); overflow: hidden; }
+
+  .reviews-track-wrapper {
+    overflow: hidden;
+    margin: 0 -5%;
+    padding: 0.5rem 0 1rem;
+    cursor: default;
+  }
+  .reviews-track {
+    display: flex;
+    gap: 1.25rem;
+    width: max-content;
+    padding: 0 2.5rem;
+    animation: scroll-reviews 48s linear infinite;
+  }
+  .reviews-track:hover { animation-play-state: paused; }
+
+  @keyframes scroll-reviews {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .review-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    width: 320px;
+    flex-shrink: 0;
+  }
+  .review-stars { color: #F59E0B; font-size: 0.9rem; letter-spacing: -1px; margin-bottom: 0.75rem; }
+  .review-text {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  .review-author { display: flex; align-items: center; gap: 0.75rem; }
+  .review-avatar {
+    width: 36px; height: 36px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+  .review-name { font-size: 0.875rem; font-weight: 500; color: var(--navy); }
+  .review-meta { font-size: 0.75rem; color: var(--text-soft); }
+  .google-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    margin-bottom: 2rem;
+  }
+  .g-dot { width: 8px; height: 8px; background: #4285F4; border-radius: 50%; }
+
+  /* ABLAUF */
+  .ablauf-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+  .ablauf-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: calc(16.66% + 16px);
+    right: calc(16.66% + 16px);
+    height: 1px;
+    background: var(--border);
+    z-index: 0;
+  }
+  .ablauf-step { text-align: center; position: relative; z-index: 1; }
+  .step-num {
+    width: 64px; height: 64px;
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--navy);
+    position: relative;
+  }
+  .ablauf-step:last-child .step-num { background: var(--mint); border-color: var(--mint); color: white; }
+  .ablauf-step h3 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  .ablauf-step p { font-size: 0.875rem; color: var(--text-mid); }
+
+  /* CTA */
+  #cta {
+    background: var(--navy);
+    text-align: center;
+    padding: 6rem 5%;
+  }
+  #cta .section-label { justify-content: center; color: rgba(74,155,142,0.9); }
+  #cta .section-label::before { background: rgba(74,155,142,0.9); }
+  #cta h2 { color: white; margin-bottom: 1rem; }
+  #cta p { color: rgba(255,255,255,0.6); max-width: 440px; margin: 0 auto 2.5rem; }
+  .cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .btn-mint {
+    background: var(--mint);
+    color: white;
+    padding: 0.9rem 1.75rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .btn-mint:hover { background: var(--mint-light); transform: translateY(-1px); }
+  .btn-outline-white {
+    background: transparent;
+    color: white;
+    padding: 0.9rem 1.75rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: border-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .btn-outline-white:hover { border-color: rgba(255,255,255,0.6); }
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+    margin-top: 0.5rem;
+  }
+  .whatsapp-btn:hover { color: #25D366; }
+  .wa-icon {
+    width: 32px; height: 32px;
+    background: rgba(37,211,102,0.15);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+    color: #25D366;
+  }
+  .whatsapp-btn:hover .wa-icon { background: rgba(37,211,102,0.25); }
+
+  /* KONTAKT MODAL */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,20,35,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal {
+    background: var(--warm-white);
+    border-radius: 24px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.25s;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.2);
+  }
+  .modal-overlay.open .modal { transform: translateY(0); }
+  .modal-close {
+    position: absolute;
+    top: 1.25rem; right: 1.25rem;
+    background: var(--cream);
+    border: none;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--text-mid);
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .modal-close:hover { background: var(--border); }
+  .modal h3 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+  }
+  .modal-sub { font-size: 0.875rem; color: var(--text-soft); margin-bottom: 1.75rem; }
+  .form-group { margin-bottom: 1.1rem; }
+  .form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-mid);
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    background: white;
+    color: var(--text-dark);
+    transition: border-color 0.2s;
+    outline: none;
+    resize: vertical;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--mint); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .form-submit {
+    width: 100%;
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 100px;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+  }
+  .form-submit:hover { background: var(--navy-light); }
+  .form-notice { font-size: 0.73rem; color: var(--text-soft); margin-top: 0.75rem; text-align: center; }
+  .form-success {
+    text-align: center;
+    padding: 2rem 0;
+    display: none;
+  }
+  .form-success-icon {
+    width: 64px; height: 64px;
+    background: rgba(74,155,142,0.1);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+    color: var(--mint);
+  }
+  .form-success h4 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+  }
+  .form-success p { font-size: 0.875rem; color: var(--text-mid); }
+
+  /* FOOTER */
+  footer {
+    background: #111C2A;
+    color: rgba(255,255,255,0.55);
+    padding: 3rem 5%;
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer-brand .nav-logo { color: white; font-size: 1.3rem; display: block; margin-bottom: 0.75rem; }
+  .footer-brand p { font-size: 0.875rem; line-height: 1.6; max-width: 280px; }
+  .footer-col h4 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+  }
+  .footer-col p, .footer-col a {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    display: block;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: rgba(255,255,255,0.85); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+  .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+  .footer-links { display: flex; gap: 1.5rem; }
+
+  /* FLOATING WHATSAPP */
+  .float-wa {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    width: 54px; height: 54px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    cursor: pointer;
+    z-index: 99;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: white;
+  }
+  .float-wa:hover { transform: scale(1.08); box-shadow: 0 8px 28px rgba(37,211,102,0.45); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    #hero { grid-template-columns: 1fr; min-height: auto; padding-top: calc(68px + 3rem); padding-bottom: 3rem; gap: 2.5rem; }
+    .hero-bg { display: none; }
+    .hero-img-frame { max-width: 100%; aspect-ratio: 16/9; border-radius: 16px; }
+    .hero-badge { bottom: 16px; left: 12px; min-width: 170px; }
+    .ablauf-steps { grid-template-columns: 1fr; }
+    .ablauf-steps::before { display: none; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .form-row { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+    .trust-inner { gap: 1.25rem; }
+    .trust-divider { display: none; }
+    section { padding: 4rem 5%; }
+    h1 { font-size: clamp(2rem, 8vw, 3rem); }
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-content > * {
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-content > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-content > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-content > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-image { animation: fadeUp 0.7s 0.3s ease both; }
+
+  /* IMAGES */
+  .hero-img-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.is-visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.12s; }
+  .reveal-delay-2 { transition-delay: 0.24s; }
+  .reveal-delay-3 { transition-delay: 0.36s; }
+  .reveal-delay-4 { transition-delay: 0.48s; }
+  .reveal-delay-5 { transition-delay: 0.60s; }
+  .reveal-delay-6 { transition-delay: 0.72s; }
+
+  /* MOBILE NAV */
+  .nav-burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    color: var(--navy);
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--warm-white);
+    z-index: 150;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav-close {
+    position: absolute;
+    top: 1.25rem; right: 1.5rem;
+    background: var(--cream);
+    border: none;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--text-mid);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mobile-nav a {
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .mobile-nav a:hover { color: var(--mint); }
+  .mobile-nav .mobile-cta {
+    font-family: var(--sans);
+    font-size: 1rem !important;
+    background: var(--navy);
+    color: white !important;
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .nav-burger { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Circum <span>– Privatpraxis</span></a>
+  <div class="nav-links">
+    <a href="#schmerzen">Beschwerden</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#team">Team</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#" class="nav-cta" onclick="openModal(); return false;">Termin vereinbaren</a>
+  </div>
+  <button class="nav-burger" onclick="openMobileNav()" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+  <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Menü schließen">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="#schmerzen" onclick="closeMobileNav()">Beschwerden</a>
+  <a href="#leistungen" onclick="closeMobileNav()">Leistungen</a>
+  <a href="#team" onclick="closeMobileNav()">Team</a>
+  <a href="#bewertungen" onclick="closeMobileNav()">Bewertungen</a>
+  <a href="#" class="mobile-cta" onclick="closeMobileNav(); openModal(); return false;">Termin vereinbaren</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Privatpraxis &amp; Selbstzahler · Nürnberg</p>
+    <h1>Bleiben Sie in <em>Bewegung!</em></h1>
+    <p class="hero-sub">Ihre private Praxis für Physiotherapie in Nürnberg. Analyse, Schulung und gezielte Behandlung ab der ersten Sitzung. Wir nehmen uns Zeit für Sie.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary" onclick="openModal(); return false;">
+        Termin vereinbaren →
+      </a>
+      <a href="tel:+4991146244920" class="btn-phone">
+        <span class="phone-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.17 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.08 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        0911 46 244 92
+      </a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-img-frame">
+      <img
+        src="images/hendrik-buchholz.jpg"
+        alt="Hendrik Buchholz - Circum Physiotherapie"
+        loading="eager"
+        fetchpriority="high"
+        style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"
+      >
+      <div class="hero-badge">
+        <div>
+          <div class="badge-stars">★★★★★</div>
+          <div class="badge-text">
+            <strong>Privatpraxis &amp; Selbstzahler</strong>
+            <span>Nürnberg · Hagenstraße 9</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust" class="reveal">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <span><strong>Privatpraxis &amp; Selbstzahler</strong></span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item">
+      <div class="trust-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <span>Termin oft <strong>innerhalb 48h</strong></span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item">
+      <div class="trust-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+      </div>
+      <span><strong>Über 15 Jahre</strong> Erfahrung</span>
+    </div>
+    <div class="trust-divider" aria-hidden="true"></div>
+    <div class="trust-item">
+      <div class="trust-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <span><strong>2.000+ Patienten</strong> erfolgreich behandelt</span>
+    </div>
+  </div>
+</div>
+
+<!-- SCHMERZEN -->
+<section id="schmerzen" class="reveal">
+  <p class="section-label">Ihre Beschwerden</p>
+  <h2>Wo drückt der Schuh?</h2>
+  <p class="section-intro">Egal ob akute Verletzung oder chronische Beschwerden — wir kennen Ihre Situation und wissen, wie wir helfen können.</p>
+  <div class="schmerz-grid">
+    <a href="#" class="schmerz-card reveal reveal-delay-1" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Rücken / Wirbelsäule -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M9 5h6"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+      </span>
+      <h3>Rückenschmerzen</h3>
+      <p>Lendenwirbel, Bandscheibe, Verspannung</p>
+    </a>
+    <a href="#" class="schmerz-card reveal reveal-delay-2" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Hals / HWS Rotation -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.49"/></svg>
+      </span>
+      <h3>Nackenschmerzen</h3>
+      <p>HWS, Muskelverspannung, Kopfschmerzen</p>
+    </a>
+    <a href="#" class="schmerz-card reveal reveal-delay-3" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Gelenk / Knie Flexion -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L12 12 L20 20"/><circle cx="12" cy="12" r="3"/></svg>
+      </span>
+      <h3>Knieschmerzen</h3>
+      <p>Meniskus, Kreuzband, Arthrose</p>
+    </a>
+    <a href="#" class="schmerz-card reveal reveal-delay-4" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Schulter / Beweglichkeit -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8 L12 14"/><path d="M12 14 L7 20"/><path d="M12 14 L17 20"/><path d="M8 11 L4 9"/><path d="M16 11 L20 9"/></svg>
+      </span>
+      <h3>Schulter</h3>
+      <p>Impingement, Schultersteife, Sehnenentzündung</p>
+    </a>
+    <a href="#" class="schmerz-card reveal reveal-delay-5" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Fuß / Laufen -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 19 21 12 17 5 21 12 2"/></svg>
+      </span>
+      <h3>Hüfte &amp; Fuß</h3>
+      <p>Hüftarthrose, Fersensporn, Sprunggelenk</p>
+    </a>
+    <a href="#" class="schmerz-card reveal reveal-delay-6" onclick="openModal(); return false;">
+      <span class="schmerz-icon" aria-hidden="true">
+        <!-- Reha / Medizin Kreuz -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      </span>
+      <h3>Nach OP &amp; Reha</h3>
+      <p>Prothese, Kreuzband-OP, Fraktur-Nachsorge</p>
+    </a>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section id="leistungen" class="reveal">
+  <p class="section-label">Unser Angebot</p>
+  <h2>Was wir für Sie tun</h2>
+  <p class="section-intro">Bewährte Therapiemethoden, individuell auf Sie abgestimmt — von der Erstuntersuchung bis zur vollständigen Genesung.</p>
+  <div class="leistungen-grid">
+    <div class="leistung-card reveal reveal-delay-1">
+      <div class="leistung-num">01</div>
+      <h3>Befundorientierte Behandlung</h3>
+      <p>Gezielte Therapie auf Basis einer gründlichen Befunderhebung — ab der ersten Sitzung. Keine Schablonenlösungen, sondern individuelle Analyse und präziser Behandlungsplan.</p>
+      <span class="leistung-tag">Selbstzahler</span>
+    </div>
+    <div class="leistung-card">
+      <div class="leistung-num">02</div>
+      <h3>Aktive Prävention</h3>
+      <p>Langfristige Stabilisierung durch gezielte Übungsprogramme und Bewegungsschulungen. Wir begleiten Sie dabei, Beschwerden aktiv vorzubeugen.</p>
+      <span class="leistung-tag">Selbstzahler</span>
+    </div>
+    <div class="leistung-card">
+      <div class="leistung-num">03</div>
+      <h3>Manuelle Therapie</h3>
+      <p>Spezifische Grifftechniken zur Behandlung von Gelenk- und Wirbelsäulenbeschwerden. Sanft, präzise und evidenzbasiert.</p>
+      <span class="leistung-tag">Selbstzahler</span>
+    </div>
+    <div class="leistung-card">
+      <div class="leistung-num">04</div>
+      <h3>Workshop: Richtig Sitzen</h3>
+      <p>Praxisorientierter Workshop zur Haltungskorrektur und ergonomischen Gestaltung des Arbeitsplatzes — für dauerhaft weniger Rücken- und Nackenbeschwerden.</p>
+      <span class="leistung-tag">Workshop</span>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM WIR -->
+<section id="warum" class="reveal">
+  <p class="section-label">Warum Circum</p>
+  <h2>Ihr Vorteil bei uns</h2>
+  <p class="section-intro">Wir arbeiten nicht mit Fließband-Medizin. Jeder Patient bekommt die Zeit und Aufmerksamkeit, die er verdient.</p>
+  <div class="warum-grid">
+    <div class="warum-card">
+      <div class="warum-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      <h3>Schnelle Termine</h3>
+      <p>Kein monatelanges Warten. Bei uns bekommen Sie in der Regel innerhalb von 48 Stunden einen Termin — auch kurzfristig.</p>
+    </div>
+    <div class="warum-card">
+      <div class="warum-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <h3>Alle Kassen &amp; Privat</h3>
+      <p>Wir behandeln Patienten aller gesetzlichen Krankenkassen und Privatversicherungen. Kein bürokratischer Aufwand für Sie.</p>
+    </div>
+    <div class="warum-card">
+      <div class="warum-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <h3>Individuelle Behandlung</h3>
+      <p>Keine Pauschalbehandlung. Wir analysieren Ihre spezifische Situation und erstellen einen persönlichen Therapieplan.</p>
+    </div>
+    <div class="warum-card">
+      <div class="warum-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>Zentral in Nürnberg</h3>
+      <p>Gut erreichbar mit öffentlichen Verkehrsmitteln und eigenem Parkplatz direkt vor der Praxis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="reveal">
+  <p class="section-label">Ihr Therapeut</p>
+  <h2>Wer Sie behandelt</h2>
+  <p class="section-intro">Persönliche Betreuung durch den Praxisinhaber — von der Befunderhebung bis zur abschließenden Behandlung.</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-info">
+        <div class="team-photo">
+          <img src="images/team/hendrik-buchholz.jpg" alt="Hendrik Buchholz - Physiotherapeut Nürnberg" loading="lazy">
+        </div>
+        <h3>Hendrik Buchholz</h3>
+        <p class="team-role">Staatlich geprüfter Physiotherapeut &amp; Praxisinhaber</p>
+        <p class="team-bio">Staatlich geprüfter Physiotherapeut mit Spezialisierung auf befundorientierte Behandlung, manuelle Therapie und aktive Prävention. Inhaber der Privatpraxis Circum in Nürnberg.</p>
+        <div class="team-spec">
+          <span class="spec-pill">Manuelle Therapie</span>
+          <span class="spec-pill">Prävention</span>
+          <span class="spec-pill">Befund &amp; Analyse</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEWERTUNGEN -->
+<section id="bewertungen" class="reveal">
+  <p class="section-label">Was Patienten sagen</p>
+  <h2>Bewertungen bei Google</h2>
+  <div class="google-badge">
+    <div class="g-dot"></div>
+    <a href="https://www.google.com/search?q=Circum+Physiotherapie+N%C3%BCrnberg" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;">Google Bewertungen · Circum Physiotherapie Nürnberg</a>
+  </div>
+  <div class="reviews-track-wrapper" aria-label="Patientenbewertungen" role="region">
+    <div class="reviews-track">
+
+      <!-- Karte 1 -->
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Hendrik Buchholz ist ein sehr kompetenter und sympathischer Physiotherapeut. Seine Analyse war gründlich und die Behandlung hat mir schnell geholfen."</p>
+        <div class="review-author">
+          <div class="review-avatar">MK</div>
+          <div>
+            <p class="review-name">Michael K.</p>
+            <p class="review-meta">Google Bewertung · ★★★★★</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karte 2 -->
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Als Privatpraxis merkt man den Unterschied: Man bekommt viel mehr Zeit für die Behandlung. Sehr empfehlenswert in Nürnberg St. Peter."</p>
+        <div class="review-author">
+          <div class="review-avatar">SL</div>
+          <div>
+            <p class="review-name">Sandra L.</p>
+            <p class="review-meta">Google Bewertung · ★★★★★</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karte 3 — Platzhalter für weitere Bewertungen -->
+      <div class="review-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:var(--text-soft); min-width:300px;">
+        <div style="font-size:2rem; margin-bottom:0.75rem;">⭐</div>
+        <p style="font-size:0.9rem; line-height:1.6;">Weitere Bewertungen folgen in Kürze.<br>Hinterlassen Sie uns gerne Ihre Meinung bei Google.</p>
+        <a href="https://www.google.com/search?q=Circum+Physiotherapie+N%C3%BCrnberg" target="_blank" rel="noopener noreferrer" style="margin-top:1rem; font-size:0.85rem; color:var(--mint); font-weight:500; text-decoration:none;">Jetzt bewerten →</a>
+      </div>
+
+      <!-- Duplikate für nahtlosen Loop -->
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Hendrik Buchholz ist ein sehr kompetenter und sympathischer Physiotherapeut. Seine Analyse war gründlich und die Behandlung hat mir schnell geholfen."</p>
+        <div class="review-author">
+          <div class="review-avatar">MK</div>
+          <div><p class="review-name">Michael K.</p><p class="review-meta">Google Bewertung · ★★★★★</p></div>
+        </div>
+      </div>
+      <div class="review-card" aria-hidden="true">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Als Privatpraxis merkt man den Unterschied: Man bekommt viel mehr Zeit für die Behandlung. Sehr empfehlenswert in Nürnberg St. Peter."</p>
+        <div class="review-author">
+          <div class="review-avatar">SL</div>
+          <div><p class="review-name">Sandra L.</p><p class="review-meta">Google Bewertung · ★★★★★</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section id="ablauf" class="reveal">
+  <p class="section-label">So einfach geht's</p>
+  <h2>In 3 Schritten zur Behandlung</h2>
+  <p class="section-intro">Kein komplizierter Prozess. Rufen Sie an oder schreiben Sie uns — wir kümmern uns um den Rest.</p>
+  <div class="ablauf-steps">
+    <div class="ablauf-step">
+      <div class="step-num">1</div>
+      <h3>Kontakt aufnehmen</h3>
+      <p>Anruf, WhatsApp oder Kontaktformular — Sie wählen, wie es Ihnen am besten passt.</p>
+    </div>
+    <div class="ablauf-step">
+      <div class="step-num">2</div>
+      <h3>Erstgespräch & Befund</h3>
+      <p>Wir analysieren Ihre Situation gründlich und erstellen einen individuellen Therapieplan.</p>
+    </div>
+    <div class="ablauf-step">
+      <div class="step-num">3</div>
+      <h3>Behandlung & Genesung</h3>
+      <p>Die Therapie beginnt — und wir begleiten Sie bis Sie wieder schmerzfrei sind.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <p class="section-label">Jetzt starten</p>
+  <h2>Bereit, schmerzfrei zu werden?</h2>
+  <p><strong>Termine nur nach Vereinbarung!</strong> Vereinbaren Sie jetzt Ihren Termin — unkompliziert und schnell. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+  <div class="cta-actions">
+    <a href="#" class="btn-mint" onclick="openModal(); return false;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/></svg>
+      Termin anfragen
+    </a>
+    <a href="tel:+4991146244920" class="btn-outline-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.17 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.08 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      0911 46 244 92
+    </a>
+  </div>
+  <div>
+    <a href="https://wa.me/4916096407220" class="whatsapp-btn" target="_blank">
+      <span class="wa-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </span>
+      Oder per WhatsApp schreiben
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">Circum <span>– Privatpraxis</span></a>
+      <p>Privatpraxis für Physiotherapie in Nürnberg — Analyse, Schulung und gezielte Behandlung für Privatpatienten und Selbstzahler.<br><strong style="color:var(--mint-light);">Termine nur nach Vereinbarung.</strong></p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>Hagenstraße 9<br>90461 Nürnberg</p>
+      <a href="tel:+4991146244920">0911 46 244 92</a>
+      <a href="tel:+4916096407220">0160 96 407 220</a>
+      <a href="mailto:info@circum-physio.de">info@circum-physio.de</a>
+    </div>
+    <div class="footer-col">
+      <h4>Öffnungszeiten</h4>
+      <p>Mo–Do: 8:00 – 19:00 Uhr</p>
+      <p>Fr: 8:00 – 16:00 Uhr</p>
+      <p>Sa: nach Vereinbarung</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Circum - Hendrik Buchholz</span>
+    <div class="footer-links">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/4916096407220" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp schreiben">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<!-- KONTAKT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Formular schließen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <h3 id="modal-title">Termin anfragen</h3>
+    <p class="modal-sub">Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
+    <div id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-vorname">Vorname</label>
+          <input type="text" id="f-vorname" name="vorname" placeholder="Max" autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label for="f-nachname">Nachname</label>
+          <input type="text" id="f-nachname" name="nachname" placeholder="Mustermann" autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="f-telefon">Telefon</label>
+        <input type="tel" id="f-telefon" name="telefon" placeholder="0911 / ..." autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="f-anliegen">Ihr Anliegen</label>
+        <select id="f-anliegen" name="anliegen">
+          <option value="">Bitte wählen...</option>
+          <option>Rückenschmerzen</option>
+          <option>Nackenschmerzen</option>
+          <option>Knieschmerzen</option>
+          <option>Schulter</option>
+          <option>Nach OP / Reha</option>
+          <option>Sonstiges</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="f-nachricht">Nachricht (optional)</label>
+        <textarea id="f-nachricht" name="nachricht" rows="3" placeholder="Weitere Angaben zu Ihren Beschwerden..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">Anfrage absenden →</button>
+      <p class="form-notice">Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben. Datenschutzerklärung</p>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <div class="form-success-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h4>Anfrage erhalten!</h4>
+      <p>Wir melden uns innerhalb von 24 Stunden telefonisch bei Ihnen. Vielen Dank!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* --- Modal --- */
+  function openModal() {
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.querySelector('#modalOverlay .modal-close').focus();
+  }
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
+  }
+  function submitForm() {
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    setTimeout(() => {
+      closeModal();
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display = '';
+        document.getElementById('formSuccess').style.display = 'none';
+      }, 300);
+    }, 3000);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeModal(); closeMobileNav(); }
+  });
+
+  /* --- Mobile Nav --- */
+  function openMobileNav() {
+    document.getElementById('mobileNav').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.querySelector('.nav-burger').setAttribute('aria-expanded', 'true');
+  }
+  function closeMobileNav() {
+    document.getElementById('mobileNav').classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelector('.nav-burger').setAttribute('aria-expanded', 'false');
+  }
+
+  /* --- Scroll Reveal --- */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PhysicalTherapy",
+  "name": "Circum – Privatpraxis für Physiotherapie",
+  "url": "/",
+  "founder": {
+    "@type": "Person",
+    "name": "Hendrik Buchholz"
+  },
+  "telephone": "+4991146244920",
+  "email": "info@circum-physio.de",
+  "image": "/og-image.jpg",
+  "description": "Privatpraxis für Physiotherapie in Nürnberg – Befundorientierte Behandlung, Manuelle Therapie und aktive Prävention für Privatpatienten und Selbstzahler. Inhaber: Hendrik Buchholz.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hagenstraße 9",
+    "postalCode": "90461",
+    "addressLocality": "Nürnberg",
+    "addressRegion": "Bayern",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.4521,
+    "longitude": 11.0767
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday"],
+      "opens": "08:00",
+      "closes": "16:00"
+    }
+  ],
+  "priceRange": "€€",
+  "paymentAccepted": "Private Krankenversicherung, Selbstzahler"
+}
+</script>
+</body>
+</html>
