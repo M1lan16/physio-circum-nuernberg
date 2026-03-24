@@ -848,10 +848,45 @@
 
   /* RESPONSIVE */
   @media (max-width: 768px) {
-    #hero { grid-template-columns: 1fr; min-height: auto; padding-top: calc(68px + 3rem); padding-bottom: 3rem; gap: 2.5rem; }
+    #hero {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      min-height: auto;
+      padding-top: calc(68px + 2rem);
+      padding-bottom: 3rem;
+      gap: 1.5rem;
+    }
     .hero-bg { display: none; }
-    .hero-img-frame { max-width: 100%; aspect-ratio: 16/9; border-radius: 16px; }
-    .hero-badge { bottom: 16px; left: 12px; min-width: 170px; }
+    /* Image moves above text */
+    .hero-image {
+      order: -1;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    /* Compact circular avatar */
+    .hero-img-frame {
+      width: 180px;
+      height: 180px;
+      max-width: 180px;
+      border-radius: 50%;
+      aspect-ratio: unset;
+      flex-shrink: 0;
+    }
+    .hero-img-frame img {
+      object-position: 50% 10% !important;
+    }
+    /* Badge sits below the circle, not floating over face */
+    .hero-badge {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      margin: 0.75rem auto 0;
+      min-width: unset;
+      width: fit-content;
+    }
     .ablauf-steps { grid-template-columns: 1fr; }
     .ablauf-steps::before { display: none; }
     .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
